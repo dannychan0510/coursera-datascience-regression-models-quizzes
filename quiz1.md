@@ -134,4 +134,6 @@ What value minimizes the sum of the squared distances between these points and i
 Let the slope having fit Y as the outcome and X as the predictor be denoted as β1. Let the slope from fitting X as the outcome and Y as the predictor be denoted as γ1. Suppose that you divide β1 by γ1; in other words consider β1/γ1. What is this ratio always equal to?
 
 ## Solution to Question 10
+```
 Var(Y)/Var(X)
+```

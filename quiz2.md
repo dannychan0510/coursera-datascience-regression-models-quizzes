@@ -47,6 +47,10 @@ In the `mtcars` data set, fit a linear regression model of weight (predictor) on
 
 ## Solution for Question 3
 ```
-dB <- as.data.frame(mtcars)
-fit <- lm(mpg ~ wt, data = dB)
+> dB <- as.data.frame(mtcars)
+> fit <- lm(mpg ~ wt, data = dB)
+> newdata <- data.frame(wt = mean(mtcars$wt))
+> predict(fit, newdata, interval = ("confidence"))
+       fit      lwr      upr
+1 20.09062 18.99098 21.19027
 ```

@@ -122,8 +122,8 @@ Refer back to the mtcars data set with mpg as an outcome and weight (wt) as the 
 > dB <- as.data.frame(mtcars)
 > interceptOnly <- lm(mpg ~ 1, data = dB)
 > interceptAndSlope <- lm(mpg ~ wt, data = dB)
-> anova(interceptAndSlope)[[1, 2]] / anova(interceptOnly)[[2]]
-[1] 0.7528328
+> anova(interceptAndSlope)[[2, 2]] / anova(interceptOnly)[[2]]
+[1] 0.2471672
 ```
 
 
